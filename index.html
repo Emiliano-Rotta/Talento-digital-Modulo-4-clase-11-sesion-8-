@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <title>usuarios</title>
 </head>
 <body>
-    <h1>Usuarios</h1>
+     <h1>Usuarios</h1>
     <button id="cargarUsuarios">Cargar usuarios</button>
     <table id="tablaUsuarios" border="1">
         <thead>
@@ -17,13 +17,41 @@
             </tr>
 
         </thead>
-    </table>
+    </table> 
 
+    <h1>Publicaciones</h1>
+    <button id="cargarPost">Cargar publicaciones</button>
+    <ul id="listaPosts">
+        
+    </ul>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+</html> -->
+
+
+<!-- Ejercicio con post -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Publicación</title>
+</head>
+<body>
+    <h1>Nueva Publicación</h1>
+    <form id="formPost">
+        <input type="text" id="titulo" placeholder="Título" required><br>
+        <textarea id="contenido" placeholder="Contenido" required></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <div id="respuesta"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
-
-

@@ -61,41 +61,109 @@
 // }
 // })
 
-$(document).ready(function () {
-    $("#cargarUsuarios").on("click", function () {
-        $.ajax({
-            url: "https://jsonplaceholder.typicode.com/users",
-            method: "GET",
-            dataType: "json",
-            success: function (data) {
-                // let filas = ""
-                // data.forEach(usuario => {
-                //     filas += `<tr>
-                //                 <td>${usuario.id}</td>
-                //                 <td>${usuario.username}</td>
-                //                 <td>${usuario.email}</td>
-                //             </tr>`
+// $(document).ready(function () {
+//     $("#cargarUsuarios").on("click", function () {
+//         $.ajax({
+//             url: "https://jsonplaceholder.typicode.com/users",
+//             method: "GET",
+//             dataType: "json",
+//             success: function (data) {
+//                 // let filas = ""
+//                 // data.forEach(usuario => {
+//                 //     filas += `<tr>
+//                 //                 <td>${usuario.id}</td>
+//                 //                 <td>${usuario.username}</td>
+//                 //                 <td>${usuario.email}</td>
+//                 //             </tr>`
 
-                // });
-                let filas = '';
-                for (let i = 0; i < data.length; i++) {
-                    filas += `<tr>
-                                <td>${data[i].id}</td>
-                                <td>${data[i].name}</td>
-                                <td>${data[i].email}</td>
-                              </tr>`;
-                }
-                $("#tablaUsuarios").html(filas)
-            },
-            error: function(error){
-                console.log("Hubo un error" , error.message)
-            }
-        })
-    })
-})
+//                 // });
+//                 let filas = '';
+//                 for (let i = 0; i < data.length; i++) {
+//                     filas += `<tr>
+//                                 <td>${data[i].id}</td>
+//                                 <td>${data[i].name}</td>
+//                                 <td>${data[i].email}</td>
+//                               </tr>`;
+//                 }
+//                 $("#tablaUsuarios").html(filas)
+//             },
+//             error: function(error){
+//                 console.log("Hubo un error" , error.message)
+//             }
+//         })
+//     })
+// })
 
 
 
 // Consigna: Usando jQuery y Ajax, realiza una petición GET a la API de https://jsonplaceholder.typicode.com/posts y muestra una lista de títulos de publicaciones en una lista desordenada (<ul>). 
 
 // en index: <ul id="listaPosts"></ul>
+
+// $(document).ready(function () {
+//     $("#cargarPost").on("click", function () {
+//         $.ajax({
+//             url: "https://jsonplaceholder.typicode.com/posts",
+//             method: "GET",
+//             dataType: "json",
+//             success: function(data){
+//                 let lista = ""
+//                 data.forEach(post => {
+//                     lista += `<li>${post.title}</li>`
+//                 });
+//                $("#listaPosts").html(lista)
+
+//             },
+//                 error: function (error) {
+//                     console.log("Hubo un error", error.message)
+//                 }
+//         })
+//     })
+// })
+
+
+// //lo mismo que recien pero con una pagina erronea para que funcione el error
+
+// $(document).ready(function () {
+//     $("#cargarPost").on("click", function () {
+//         $.ajax({
+//             url: "https://jsonplaceholder.typicode.com/pagina-no-encontrada",
+//             method: "GET",
+//             dataType: "json",
+//             success: function(data){
+//                 let lista = ""
+//                 data.forEach(post => {
+//                     lista += `<li>${post.title}</li>`
+//                 });
+//                $("#listaPosts").html(lista)
+
+//             },
+//                 error: function (error) {
+//                     console.log("Hubo un error", error)
+//                     if (error.status === 404) {
+//                         alert("ups, estamos con problemas, vuelve a cargar")
+//                     }
+//                 }
+//         })
+//     })
+// })
+
+//--------------------------------------------------------------------------------
+
+// $(document).ready(function () {
+//     $('#formPost').on('submit', function (event) {
+//         event.preventDefault()
+//         const nuevoPost = {
+//             title: $("#titulo").val(),
+//             body: $("#contenido").val(),
+//             userId: 1
+//         };
+//         $.post("https://jsonplaceholder.typicode.com/posts", nuevoPost, function(data) {
+//             $("#respuesta").html(`<p>Post creado con ID: ${data.id}</p>
+//                                   <p>Titulo: ${data.title}</p>
+//                                   <p>Contenido: ${data.body}</p>`)
+//         })
+
+//     })
+
+//     })
