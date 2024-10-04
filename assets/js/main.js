@@ -167,3 +167,97 @@
 //     })
 
 //     })
+
+
+//--------------------------------------------------------------------------------
+//                               API
+//--------------------------------------------------------------------------------
+
+// 1. Rick and Morty API
+// Descripción: Proporciona datos de personajes, ubicaciones y episodios de la serie Rick and Morty.
+// URL: https://rickandmortyapi.com/
+// Ejemplo de endpoint: /api/character
+
+// 2. JSONPlaceholder
+// Descripción: Una API falsa que puedes usar para probar tus aplicaciones con datos de prueba (posts, comentarios, usuarios, etc.).
+// URL: https://jsonplaceholder.typicode.com/
+// Ejemplo de endpoint: /posts
+
+
+// 3. Dog CEO's Dog API
+// Descripción: Devuelve imágenes aleatorias y por raza de perros.
+// URL: https://dog.ceo/dog-api/
+// Ejemplo de endpoint: /breeds/image/random
+
+
+// 4. The Cat API
+// Descripción: Proporciona imágenes aleatorias de gatos.
+// URL: https://thecatapi.com/
+// Ejemplo de endpoint: /v1/images/search
+
+
+// 5. Advice Slip API
+// Descripción: Ofrece consejos aleatorios en formato de texto.
+// URL: https://api.adviceslip.com/
+// Ejemplo de endpoint: /advice
+
+
+// 6. OpenWeatherMap (Free Weather Data)
+// Descripción: Devuelve datos de clima en tiempo real para ciudades del mundo. Tiene un endpoint sin clave que ofrece datos muy básicos.
+// URL: https://openweathermap.org/
+// Ejemplo de endpoint: /data/2.5/weather?q=London&appid=b6907d289e10d714a6e88b30761fae22 (sin clave)
+
+
+// 7. Bored API
+// Descripción: Proporciona ideas de actividades para hacer cuando estés aburrido.
+// URL: https://www.boredapi.com/
+// Ejemplo de endpoint: /api/activity
+
+
+// 8. RandomUser API
+// Descripción: Genera usuarios aleatorios para pruebas o demostraciones.
+// URL: https://randomuser.me/
+// Ejemplo de endpoint: /api/
+
+
+// 9. Universities API
+// Descripción: Ofrece información sobre universidades de todo el mundo.
+// URL: http://universities.hipolabs.com/
+// Ejemplo de endpoint: /search?country=United+States
+
+// 10. JokeAPI
+// Descripción: Devuelve chistes aleatorios con diferentes categorías (seguro para el trabajo, NSFW, etc.).
+// URL: https://v2.jokeapi.dev/
+// Ejemplo de endpoint: /joke/Programming
+
+
+//Ejercicio que haremos mañana
+
+// Consigna 
+// Objetivo: Vas a desarrollar una página web dinámica que cargue información sobre personajes de la serie Rick and Morty utilizando la API pública de Rick and Morty. Usarás jQuery y Ajax para realizar las solicitudes de datos, y las mostrarás en forma de cards con información de cada personaje. Deberás usar funciones flecha y sintaxis moderna de ES6.
+
+// Requisitos:
+// Estructura HTML:
+
+// Crea un archivo index.html que contenga:
+// Un contenedor donde se mostrarán las 20 cards de los personajes.
+// Cada card debe contener la imagen del personaje, el nombre debajo de la imagen, y el estado (vivo, muerto, desconocido) en un tamaño más pequeño.
+// CSS:
+
+// El archivo styles.css debe dar estilo a las cards de los personajes. Deben ser del mismo tamaño, estar organizadas en una cuadrícula, y tener un diseño atractivo (puedes inspirarte en otros diseños de tarjetas). Usa Flexbox para posicionarlas. (no es lo central en este módulo, no te detengas mucho tiempo aqui.)
+// JavaScript (ES6):
+
+// Usa jQuery y Ajax para hacer una solicitud a la API de Rick and Morty (https://rickandmortyapi.com/api/character) para obtener los primeros 20 personajes.
+// Procesa los datos recibidos y crea dinámicamente las cards con la información de cada personaje.
+// Usa funciones flecha para manipular los datos y renderizar las cards en el HTML.
+// Detalles técnicos:
+
+// Cada card debe contener:
+// Imagen del personaje.
+// Nombre debajo de la imagen.
+// Estado del personaje (vivo, muerto o desconocido) en un tamaño de texto más pequeño.
+
+// Si hay algún error al hacer la solicitud a la API, muestra un mensaje de error en la página.
+// Recursos:
+
+// API de Rick and Morty: La API que vas a usar es pública y no necesita autenticación. Puedes hacer solicitudes GET al endpoint https://rickandmortyapi.com/api/character para obtener datos sobre los personajes.
